@@ -1,0 +1,29 @@
+{
+  "name": "saucedemo-automation",
+  "version": "1.0.0",
+  "description": "Automation testing untuk SauceDemo dengan Playwright dan TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:checkout": "playwright test tests/checkout.spec.ts",
+    "test:sorting": "playwright test tests/sorting.spec.ts"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^20.19.33",
+    "typescript": "^5.9.3"
+  }
+}
